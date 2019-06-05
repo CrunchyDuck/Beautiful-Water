@@ -1,5 +1,5 @@
 # **Beautiful-Water**
-## A RimWorld mod that adds beauty values to water
+## A RimWorld mod for water beauty
 
 
 ### **What does it do?**
@@ -16,7 +16,7 @@ Changes water tiles from their default 0 beauty value, to:
 
 ### **Why use this mod?**
 I designed this because, while making a water-side cabin, I realized that the pawns do not appreciate all the work I'm putting in just for them to have a cool home.
-I thought it only made sense for ocean water to have a much higher value, because of the pretty scene the pawns should be able to see from it. Unless you build a wall in the way or something, you monster.
+I thought it only made sense for ocean water to have a much higher value, because of the pretty scene the pawns should be able to see from it. Unless you build a wall in the way or something, *you monster.*
 
 
 ### Footnotes
