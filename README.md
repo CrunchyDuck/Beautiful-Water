@@ -1,5 +1,6 @@
-# Beautiful-Water
-## **A RimWorld mod that adds beauty values to water**
+# **Beautiful-Water**
+## A RimWorld mod that adds beauty values to water
+
 
 ### **What does it do?**
 Makes water tiles have a beauty value, as it should.
