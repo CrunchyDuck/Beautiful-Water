@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="WaterMovingShallow"]</xpath>
+	<value>
+	  <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="WaterOceanShallow"]</xpath>
+	<value>
+	  <statBases>
+      <Beauty>5</Beauty>
+    </statBases>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="WaterOceanDeep"]</xpath>
+	<value>
+	  <statBases>
+      <Beauty>25</Beauty>
+    </statBases>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="WaterDeep"]</xpath>
+	<value>
+	  <statBases>
+      <Beauty>15</Beauty>
+    </statBases>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="WaterShallow"]</xpath>
+	<value>
+	  <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+	</value>
+  </Operation>
+
+
+	<Operation Class="ModCheck.IfElse">
+	  <test Class="ModCheck.isModLoaded">
+		<modName>Impassable Chest-deep Water</modName>
+		<errorOnFail>false</errorOnFail>
+		<MessageFail>From Beautiful Water: "Impassable Chest-deep Water" not detected, using default patch values.</MessageFail>
+		<MessageSuccess>From Beautiful Water: "Impassable Chest-deep Water" detected, loading adjusted beauty values.</MessageSuccess>
+	  </test>
+	  
+	  <passed Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
+		<value>
+		  <statBases>
+			<Beauty>15</Beauty>
+		  </statBases>
+		</value>
+	  </passed>
+  
+      <failed Class="PatchOperationAdd">
+	    <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
+	    <value>
+	      <statBases>
+            <Beauty>5</Beauty>
+          </statBases>
+        </value>
+	  </failed>
+	  
+	</Operation>
+</Patch>
+	  
+
+
+  <!-- Old code
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]</xpath>
+	<value>
+	  <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+	</value>
+  </Operation>-->
+
+
+
+
